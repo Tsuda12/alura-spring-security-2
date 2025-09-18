@@ -29,4 +29,8 @@ public class UsuarioService implements UserDetailsService {
 
         return usuario.getId();
     }
+
+    public void excluir(Long id) {
+        usuarioRepository.deleteById(id);
+    }
 }
